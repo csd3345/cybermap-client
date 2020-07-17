@@ -1,0 +1,68 @@
+$main_color: #00ff80;
+
+.bootbox {
+  user-select: none;
+}
+
+.modal-content {
+  background: #24353e;
+  color: white;
+  text-align: justify;
+}
+
+.modal-header {
+  color: $main_color;
+}
+
+.bootbox-close-button:active,
+.bootbox-close-button:after,
+.bootbox-close-button:focus, {
+  outline: none;
+}
+
+.bootbox-close-button:hover {
+  color: $main_color;
+}
+
+.bootbox-close-button {
+  color: $main_color;
+}
+
+.js-tabs__content-container {
+  color: white;
+  text-align: justify;
+}
+
+
+.js-tabs__tab:hover, .js-tabs__tab:focus, .js-tabs__tab.active {
+  font-weight: bolder;
+}
+
+
+.js-tabs__tab {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  padding: 0;
+  margin: 5px;
+  color: #EF4041;
+  color: #b700ff;
+}
+
+.badge-cyber {
+  background: #88ff77;
+  background: #0062cc;
+  color: #000000;
+  text-shadow: 0 0 1em #88ff77;
+  color: #93e2bc;
+
+  margin-left: 22px;
+
+}
+
+

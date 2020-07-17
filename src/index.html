@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CyberMap</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet'/>
+
+    <!--    <script src="https://unpkg.com/topojson-client@3"></script>-->
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="bg"></div>
+    <div id="selected-country-name"></div>
+    <div id="map"></div>
+
+    <div class="card text-white" id="country-stats">
+
+        <div class="card-header d-flex flex-column red white-text text-center align-items-center pt-4 rounded not-selectable">
+            <!--<i class="x-mas-gift" style="font-size: 32px;"></i>-->
+            <img src=""
+                 id="country-flag"
+                 class="img-fluid z-depth-0 hvr-bob hvr-auto"
+                 alt="country flag icon">
+
+            <h3 class="h3 card-title" id="country-stats-name"> </h3>
+
+            <h6 class="h6" id="country-stats-ranking-incoming"> </h6>
+            <h6 class="h6" id="country-stats-ranking-outgoing"> </h6>
+
+        </div>
+
+
+        <!-- START: Card content-->
+        <div class="card-body pt-0 mb-1" id="card-body">
+
+            <ul class="nav nav-pills mt-3 d-flex flex-row justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-incoming-tab" data-toggle="pill" href="#stats-incoming"
+                       role="tab"
+                       aria-controls="pills-incoming" aria-selected="true" draggable="false">Incoming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-outgoing-tab" data-toggle="pill" href="#stats-outgoing" role="tab"
+                       aria-controls="pills-outgoing" aria-selected="false" draggable="false">Outgoing</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-4  d-flex flex-row justify-content-center" id="pills-tabContent">
+                <div class="tab-pane fade show active mx-5 w-100" id="stats-incoming" role="tabpanel"
+                     aria-labelledby="pills-incoming-tab"></div>
+                <div class="tab-pane fade mx-5 w-100" id="stats-outgoing" role="tabpanel"
+                     aria-labelledby="pills-outgoing-tab"></div>
+            </div>
+            <!-- END: Card content-->
+
+        </div>
+
+    </div>
+</div>
+
+<div class="logs-wrapper">
+    <div class="logs-outer-container">
+        <div id="console-log" class="logs-container">
+
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-column mb-3 top-right-container"> </div>
+
+
+</body>
+
+</html>

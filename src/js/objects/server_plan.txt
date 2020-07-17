@@ -1,0 +1,16 @@
+1. Attacks are stored in a file OR auto-generated
+2. 2 Paths can be followed
+    a. If the file method is used then attacks have a limit
+    b. If the auto-generation method is used then there is no limit
+3. In both cases redis publishing interval is not impacted but the file
+   limit will invoke a repeat
+4. The statistics must display data in the past 24 hours.
+    When using auto-generated data we have to update the statistics every second, but the same thing implies
+    for the file method.
+
+
+
+# attacks generator
+
+Attacks need minimum knowlegde about their existance so only
+protocol, src:lat:lng, dst:lat:lng

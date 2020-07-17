@@ -1,0 +1,14 @@
+$sidebar: 1.35rem;
+
+@import "~rfs/scss";
+
+
+.sidediv {
+  @include rfs(4%, top);
+  @include rfs(4%, right);
+  position: absolute;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
